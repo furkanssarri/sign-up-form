@@ -1,0 +1,263 @@
+@font-face {
+   font-family: Norse-Bold;
+   src: url(../fonts/Norse-Bold.otf);
+
+}
+
+@font-face {
+   font-family: NeoGram-Condensed-W00-Medium;
+   src: url(../fonts/NeoGram\ Condensed\ W00\ Medium.ttf);
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   font-size: 16px;
+   background-color: #F9FAFB;
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+   color: #5a5a5a;
+   width: 50%;
+}
+
+.background-image {
+   background-image: url(../img/background.jpg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: center center;
+}
+
+aside {
+   padding: 25px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.blur {
+   background-color: #ffffff10;
+   -webkit-backdrop-filter: blur(5px);
+   backdrop-filter: blur(5px);
+}
+
+
+aside .logo {
+   background-color: #00000050;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+aside img {
+   width: 15%;
+}
+
+aside .logo-header {
+   color: white;
+   font-family: Norse-Bold;
+   font-size: 3rem;
+}
+
+article {
+   /* padding: 0 0 25px 0; */
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+}
+
+article .heading {
+   padding: 1rem;
+   margin: 20px;
+   color: #5a5a5a;
+}
+
+article .heading h2 {
+   font-family: NeoGram-Condensed-W00-Medium, sans-serif;
+}
+
+.credit {
+   color: white;
+   font-weight: 100;
+   padding-top: 15px;
+}
+
+.credit a {
+   color: inherit;
+}
+
+fieldset {
+   background-color: #ffffff;
+   padding: 5vh 10vw;
+   border: none;
+   -webkit-box-shadow: -5px 5px 10px -3px #000000bf;
+   -moz-box-shadow: -5px 5px 10px -3px #000000bf;
+   box-shadow: -5px 5px 10px -3px #000000bf;
+}
+
+.form-row {
+   padding: 15px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="tel"],
+.form-row input[type="password"] {
+   border: 1px solid #D6D9DC;
+   border-radius: 3px;
+   width: 100%;
+   padding: 5px;
+   font-size: 0.9rem;
+}
+
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid,
+.form-row input[type='tel']:invalid,
+.form-row input[type='password']:invalid {
+   border: 1px solid #D55C5F;
+   color: #D55C5F;
+   box-shadow: none;
+}
+
+.form-row label {
+   font-family: NeoGram-Condensed-W00-Medium, Arial, sans-serif;
+   text-transform: uppercase;
+   font-size: 0.8rem;
+   font-weight: lighter;
+   color: #6a6b6b;
+   margin-bottom: 5px;
+}
+
+.form-row button {
+   font-size: 16px;
+   font-weight: bold;
+   color: #FFFFFF;
+   background-color: #596D48;
+   border: none;
+   border-radius: 3px;
+   padding: 10px 40px;
+   margin-top: 15px;
+   cursor: pointer;
+}
+
+.login-page {
+   font-family: NeoGram-Condensed-W00-Medium, sans-serif;
+   font-weight: 100;
+   transform: scale(1, 1.2);
+   color: #5a5a5a;
+}
+
+.login-page a {
+   color: #596D48;
+   text-decoration: none;
+   font-weight: bold !important;
+}
+
+footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 15px;
+   color: #5a5a5a;
+}
+
+footer a {
+   color: inherit
+}
+
+/* MEDIA QUERIES */
+/* DESKTOP */
+
+@media screen and (min-width: 700px) {
+
+   body {
+      flex-direction: column;
+   }
+
+   hr {
+      display: none;
+   }
+
+   .background-image {
+   min-width: 40%;
+   }
+
+   aside {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0;
+   }
+
+   aside .logo {
+      padding: 2.1vh 4vw;
+      justify-content: center;
+      align-items: center;
+      margin-top: 28.7vh;
+   }
+
+   aside .logo img {
+      width: 25%;
+   }
+
+   aside .logo-header {
+      font-size: 6rem;
+   }
+
+   main {
+      display: flex;
+      flex-direction: row;
+   }
+
+   article {
+      text-align: initial;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   fieldset {
+      margin-bottom: 25px;
+   }
+
+   .form-row {
+      display: inline-flex;
+      padding: 0 2vw;
+      margin: 10px 0;
+   }
+
+   .form-row input[type="text"],
+   .form-row input[type="email"],
+   .form-row input[type="tel"],
+   .form-row input[type="password"] {
+      width: 200px;
+   }
+
+   .login-page {
+      margin: 30px;
+      font-family: NeoGram-Condensed-W00-Medium, sans-serif;
+      font-weight: 100;
+      transform: scale(1, 1.2);
+   }
+
+   .login-page a {
+      color: #596D48;
+      text-decoration: none;
+      font-weight: bold !important;
+   }
+
+   .credit {
+      padding: 15px 0;
+   }
+
+}

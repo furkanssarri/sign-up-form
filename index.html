@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sign Up</title>
+   <!--FontAwesome-->
+   <script src="https://kit.fontawesome.com/a4cf3a1ade.js" crossorigin="anonymous"></script>
+<!--Styles-->
+   <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+   <main>
+   <div class="background-image">
+      <aside class="blur">
+            <div class="logo">
+               <img src="img/logo.png" alt="Odin Logo">
+               <h1 class="logo-header">ODIN</h1>
+            </div>
+            <div class="credit">
+               Photo by
+               <a
+                  href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                  Halie West
+               </a>
+               on
+               <a
+                  href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                  Unsplash
+               </a>
+            </div>
+      </aside>
+   </div>
+      <article>
+         <header class="heading">
+            <h2>Sign Up</h2>
+            <p>In order to join our fake community and view our non-existent website, 
+               you must create an account.</p>
+         </header>
+         <form action="" method="post">
+            <fieldset>
+               <div class="form-row">
+                  <label for="first_name">First Name <span aria-label="required">*</span></label>
+                     <input type="text" name="first_name" id="first_name" required>
+               </div>
+               <div class="form-row">
+                  <label for="last_name">Last Name <span aria-label="required">*</span></label>
+                     <input type="text" name="last_name" id="last_name" required>
+               </div>
+               <div class="form-row">
+                  <label for="email">Email <span aria-label="required">*</span></label>
+                     <input type="email" name="email" id="email" required>
+               </div>
+               <div class="form-row">
+                  <label for="phone">Phone Number</label>
+                     <input type="tel" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+               </div>
+               <div class="form-row">
+                  <label for="password">Password <span aria-label="required">*</span></label>
+                     <input type="password" name="password" id="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required>
+               </div>
+               <div class="form-row">
+                  <label for="confirm_password">Confirm Password <span aria-label="required">*</span></label>
+                     <input type="password" name="confirm_password" id="confirm_password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required>
+               </div>
+            </fieldset>
+            <div class="form-row">
+               <button class="submit" type="submit">Create Account</button>
+            </div>
+            <hr class="sep">
+            <p class="login-page">Already have an account? <a href="#">Log in</a></p>
+         </form>
+         <footer>
+            <div class="copyright"><a href="https://github.com/furkanssarri" _blank><i class="fa-brands fa-github"></i> furkanssarri 2024</a> | Icons made from <a href="https://www.onlinewebfonts.com/icon">svg icons</a> is licensed by CC BY 4.0</div>
+            <div class="footer-note"></div>
+         </footer>
+      </article>
+   </main>
+</body>
+</html>
