@@ -244,6 +244,13 @@ footer a {
       width: 200px;
    }
 
+   .form-row input[type="text"]::placeholder,
+   .form-row input[type="email"]::placeholder,
+   .form-row input[type="tel"]::placeholder,
+   .form-row input[type="password"]::placeholder {
+      color: #777777
+   }
+
    .login-page {
       margin: 30px;
       font-family: NeoGram-Condensed-W00-Medium, sans-serif;
